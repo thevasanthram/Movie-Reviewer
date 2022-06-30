@@ -16,6 +16,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.end('Test using POSTMAN API');
+});
+
 // api function to add movie object to database
 app.post('/add', async (req, res) => {
   try {
