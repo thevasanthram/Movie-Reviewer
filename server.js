@@ -112,6 +112,6 @@ app.delete('/delete', async (req, res) => {
 });
 
 // app listening on localhost port 5000
-app.listen(5000, () => {
-  console.log('API running on port 5000');
+app.listen(80, () => {
+  console.log('API running on port 80');
 });
